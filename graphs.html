@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Internet Usage - Briano</title>
+    <link href="images/icon.png" rel="icon" type="image">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-bar w3-top w3-card" style="background: #0e141f">
+        <div class="w3-content" style="max-width: 1600px">
+            <a class="w3-bar-item w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#home" class="w3-bar-item w3-padding-large"><b>Internet Usage</b></a>
+            <div class="w3-hide-small w3-right">
+                <a href="index.html" class="w3-bar-item w3-padding-large">HOME</a>
+                <a href="graphs.html" class="w3-bar-item w3-padding-large">GRAPHS</a>
+                <a href="worklog.html" class="w3-bar-item w3-padding-large">WORKLOG</a>
+                <a href="about.html" class="w3-bar-item w3-padding-large">ABOUT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; background-image: linear-gradient(#0e141f, #273445);">
+        <a href="index.html" class="w3-bar-item w3-padding-large">HOME</a>
+        <a href="graphs.html" class="w3-bar-item w3-padding-large">GRAPHS</a>
+        <a href="worklog.html" class="w3-bar-item w3-padding-large">WORKLOG</a>
+        <a href="about.html" class="w3-bar-item w3-padding-large">ABOUT</a>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="images/header.jpg" alt="Header">
+        <div class="w3-display-middle w3-margin-top w3-center">
+            <h1 class="w3-xxlarge w3-text-white w3-padding w3-black w3-opacity-min"><b>INTERNET USAGE</b></h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding w3-card" style="max-width:1200px; background-image: linear-gradient(#273445, #485a6c);">
+        
+        <!-- Graphs Section -->
+        <div id="graphs">
+            <h1 class="w3-center">GRAPHS</h1>
+            <div>
+                <a href="https://plot.ly/~briano1905/5/?share_key=yarfIA8AVD7p7l0EzNnwQX" target="_blank" title="Global average connection speeds 2015" style="display: block; text-align: center;"><img src="https://plot.ly/~briano1905/5.png?share_key=yarfIA8AVD7p7l0EzNnwQX" alt="Global average connection speeds 2015" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                <script data-plotly="briano1905:5" sharekey-plotly="yarfIA8AVD7p7l0EzNnwQX" src="https://plot.ly/embed.js" async></script>
+            </div>
+            <div>
+                <a href="https://plot.ly/~briano1905/3/?share_key=C0qqUzoyf028OR4BFVlwBd" target="_blank" title="Global average connection speeds 2017" style="display: block; text-align: center;"><img src="https://plot.ly/~briano1905/3.png?share_key=C0qqUzoyf028OR4BFVlwBd" alt="Global average connection speeds 2017" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                <script data-plotly="briano1905:3" sharekey-plotly="C0qqUzoyf028OR4BFVlwBd" src="https://plot.ly/embed.js" async></script>
+            </div>
+            <div>
+                <a href="https://plot.ly/~briano1905/7/?share_key=uAvNNIeMXOC6JpnrporE9s" target="_blank" title="Internet users per 100 inhabitants 2016" style="display: block; text-align: center;"><img src="https://plot.ly/~briano1905/7.png?share_key=uAvNNIeMXOC6JpnrporE9s" alt="Internet users per 100 inhabitants 2016" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                <script data-plotly="briano1905:7" sharekey-plotly="uAvNNIeMXOC6JpnrporE9s" src="https://plot.ly/embed.js" async></script>
+            </div>
+            *graphs made with Plotly
+        </div>
+    
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-bar" style="background: #0e141f;">
+        <div class="w3-content" style="max-width: 1600px">
+            <div class="w3-bar-item">&copy; briano. 2018.</div>
+            <div class="w3-right">
+                <a href="https://www.reddit.com/user/briano1905/" target="_blank" class="w3-bar-item w3-hover-opacity"><img src="images/reddit.png" alt="reddit"></a>
+                <a href="https://www.instagram.com/briano1905/" target="_blank" class="w3-bar-item w3-hover-opacity"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+
+</html>

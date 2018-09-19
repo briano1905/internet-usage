@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Internet Usage - Briano</title>
+    <link href="images/icon.png" rel="icon" type="image">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-bar w3-top w3-card" style="background: #0e141f">
+        <div class="w3-content" style="max-width: 1600px">
+            <a class="w3-bar-item w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#home" class="w3-bar-item w3-padding-large"><b>Internet Usage</b></a>
+            <div class="w3-hide-small w3-right">
+                <a href="index.html" class="w3-bar-item w3-padding-large">HOME</a>
+                <a href="graphs.html" class="w3-bar-item w3-padding-large">GRAPHS</a>
+                <a href="worklog.html" class="w3-bar-item w3-padding-large">WORKLOG</a>
+                <a href="about.html" class="w3-bar-item w3-padding-large">ABOUT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; background-image: linear-gradient(#0e141f, #273445);">
+        <a href="index.html" class="w3-bar-item w3-padding-large">HOME</a>
+        <a href="graphs.html" class="w3-bar-item w3-padding-large">GRAPHS</a>
+        <a href="worklog.html" class="w3-bar-item w3-padding-large">WORKLOG</a>
+        <a href="about.html" class="w3-bar-item w3-padding-large">ABOUT</a>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="images/header.jpg" alt="Header">
+        <div class="w3-display-middle w3-margin-top w3-center">
+            <h1 class="w3-xxlarge w3-text-white w3-padding w3-black w3-opacity-min"><b>INTERNET USAGE</b></h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding w3-card" style="max-width:1200px; background-image: linear-gradient(#273445, #485a6c);">
+
+        <!-- About Section -->
+        <div id="about">
+            <h1 class="w3-center">ABOUT</h1>
+            <p><b><em>Internet</em></b> - a global computer network providing a variety of information and communication facilities, consisting of interconnected networks using standardized communication protocols.</p>
+            <p>we'll see which country has the best internet and if that corelate to more internet usage.</p>
+        </div>
+
+        <hr>
+        
+        <!-- Sources Section -->
+        <div id="sources">
+            <h1 class="w3-center">SOURCES</h1>
+            <a href="https://goo.gl/images/PKkT71">Header image</a><br>
+            <a href="https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">itu Total internet users</a><br>
+            <a href="https://en.wikipedia.org/wiki/Global_Internet_usage">wikipedia Global Internet usage</a><br>
+            <a href="https://en.wikipedia.org/wiki/List_of_countries_by_number_of_Internet_users">wikipedia List of countries by number of Internet users</a><br>
+            <a href="https://en.wikipedia.org/wiki/List_of_countries_by_Internet_connection_speeds">wikipedia List of countries by Internet connection speeds</a>
+        </div>
+    
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-bar" style="background: #0e141f;">
+        <div class="w3-content" style="max-width: 1600px">
+            <div class="w3-bar-item">&copy; briano. 2018.</div>
+            <div class="w3-right">
+                <a href="https://www.reddit.com/user/briano1905/" target="_blank" class="w3-bar-item w3-hover-opacity"><img src="images/reddit.png" alt="reddit"></a>
+                <a href="https://www.instagram.com/briano1905/" target="_blank" class="w3-bar-item w3-hover-opacity"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+
+</html>
