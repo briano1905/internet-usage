@@ -1,9 +1,9 @@
 body {
-background-image: linear-gradient(#0e141f, #273445);
+    background: linear-gradient(to right, #101010, #4d4d4d, #101010);
 }
 
 html, body, h1, h2, h3, h4, h5, h6, a {
-    font-family: "Inconsolata";
+    font-family:'Conv_iosevka-regular',sans-Serif;
     color: #fafafa;
     text-decoration: none;
 }
@@ -20,5 +20,11 @@ a:hover {
 }
 
 #work {
-    background-image: linear-gradient(to bottom right, #a56de2, #cd9ef7);
+    background-image: linear-gradient(to bottom right, #cd9ef7, #a56de2);
 }
+
+#content {
+    background: #101010;
+}
+
+header {}

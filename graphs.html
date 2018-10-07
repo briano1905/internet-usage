@@ -9,14 +9,14 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" />
     <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <div class="w3-bar w3-top w3-card" style="background: #0e141f">
+    <div class="w3-bar w3-top w3-card" style="background: #040404">
         <div class="w3-content" style="max-width: 1600px">
             <a class="w3-bar-item w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="#home" class="w3-bar-item w3-padding-large"><b>Internet Usage</b></a>
@@ -30,7 +30,7 @@
     </div>
 
     <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; background-image: linear-gradient(#0e141f, #273445);">
+    <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; background: #040404;">
         <a href="index.html" class="w3-bar-item w3-padding-large">HOME</a>
         <a href="graphs.html" class="w3-bar-item w3-padding-large">GRAPHS</a>
         <a href="worklog.html" class="w3-bar-item w3-padding-large">WORKLOG</a>
@@ -46,11 +46,12 @@
     </header>
 
     <!-- Page content -->
-    <div class="w3-content w3-padding w3-card" style="max-width:1200px; background-image: linear-gradient(#273445, #485a6c);">
+    <div id="content" class="w3-content w3-padding w3-card" style="max-width:1200px;">
         
         <!-- Graphs Section -->
         <div id="graphs">
             <h1 class="w3-center">GRAPHS</h1>
+            <h3>Does internet speed correlates to more internet users?</h3>
             <div>
                 <a href="https://plot.ly/~briano1905/5/?share_key=yarfIA8AVD7p7l0EzNnwQX" target="_blank" title="Global average connection speeds 2015" style="display: block; text-align: center;"><img src="https://plot.ly/~briano1905/5.png?share_key=yarfIA8AVD7p7l0EzNnwQX" alt="Global average connection speeds 2015" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
                 <script data-plotly="briano1905:5" sharekey-plotly="yarfIA8AVD7p7l0EzNnwQX" src="https://plot.ly/embed.js" async></script>
@@ -63,13 +64,15 @@
                 <a href="https://plot.ly/~briano1905/7/?share_key=uAvNNIeMXOC6JpnrporE9s" target="_blank" title="Internet users per 100 inhabitants 2016" style="display: block; text-align: center;"><img src="https://plot.ly/~briano1905/7.png?share_key=uAvNNIeMXOC6JpnrporE9s" alt="Internet users per 100 inhabitants 2016" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
                 <script data-plotly="briano1905:7" sharekey-plotly="uAvNNIeMXOC6JpnrporE9s" src="https://plot.ly/embed.js" async></script>
             </div>
-            *graphs made with Plotly
+            <p>Which country has the fastest internet? South Korea with an average connection speed of 28.6 Mb/s</p>
+            <p>Which country has most internet user per 100 residents? Falkland Island, 99.02% of the population has access to the internet</p>
+            <p>Australia average connection speed: 11.1 Mb/s [rank 39]<br>Australia internet users: 88.24% [rank 23]</p>
         </div>
     
     </div>
     
     <!-- Footer -->
-    <footer class="w3-bar" style="background: #0e141f;">
+    <footer class="w3-bar" style="background: #040404;">
         <div class="w3-content" style="max-width: 1600px">
             <div class="w3-bar-item">&copy; briano. 2018.</div>
             <div class="w3-right">
