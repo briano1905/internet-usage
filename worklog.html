@@ -16,7 +16,7 @@
 <body>
 
     <!-- Navbar -->
-    <div class="w3-bar w3-top w3-card" style="background: #040404">
+    <div class="w3-bar w3-top w3-card">
         <div class="w3-content" style="max-width: 1600px">
             <a class="w3-bar-item w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="#home" class="w3-bar-item w3-padding-large"><b>Internet Usage</b></a>
@@ -51,6 +51,8 @@
         <!-- Task Section -->
         <div id="task">
             <h1 class="w3-center">JOB ALLOCATION</h1>
+            
+            <h3>Gantt chart</h3>
             <table class="w3-table">
                 <tr class="w3-border-bottom">
                     <th>Task</th>
@@ -60,54 +62,83 @@
                     <th class="w3-center">Week 4</th>
                     <th class="w3-center">Week 5</th>
                     <th class="w3-center">Week 6</th>
+                    <th class="w3-center w3-border-left">Total</th>
                 </tr>
                 <tr>
                     <th>Research</th>
-                    <th class="w3-center" id="work">BRIANO</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
+                    <th class="w3-center" id="work">120 min</th>
+                    <th class="w3-center" id="work">30 min</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center w3-border-left">150 min</th>
                 </tr>
                 <tr>
                     <th>Data Collection</th>
-                    <th class="w3-center" id="work">BRIANO</th>
                     <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
+                    <th class="w3-center" id="work">220 min</th>
+                    <th class="w3-center" id="work">80 min</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center w3-border-left">300 min</th>
                 </tr>
                 <tr>
                     <th>Graphing</th>
-                    <th class="w3-center" id="work">BRIANO</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center" id="work">150 min</th>
+                    <th class="w3-center" id="work">40 min</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center w3-border-left">190 min</th>
                 </tr>
                 <tr>
                     <th>Web development</th>
-                    <th class="w3-center" id="work">BRIANO</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
+                    <th class="w3-center" id="work">300 min</th>
+                    <th class="w3-center" id="work">80 min</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center" id="work">140 min</th>
+                    <th class="w3-center w3-border-left">520 min</th>
                 </tr>
                 <tr>
                     <th>Javascript</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>
-                    <th class="w3-center">...</th>  
-                    <th class="w3-center" id="work">BRIANO</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center">~</th>
+                    <th class="w3-center" id="work">500 min</th>
+                    <th class="w3-center" id="work">200 min</th>
+                    <th class="w3-center" id="work">200 min</th>
+                    <th class="w3-center w3-border-left">900 min</th>
+                </tr>
+                <tr class="w3-border-top">
+                    <th>Total</th>
+                    <th class="w3-center">420 min</th>
+                    <th class="w3-center">330 min</th>
+                    <th class="w3-center">230 min</th>
+                    <th class="w3-center">540 min</th>
+                    <th class="w3-center">200 min</th>
+                    <th class="w3-center">340 min</th>
+                    <th class="w3-center w3-border-left">2060 min</th>
+                </tr>
+                <tr class="w3-border-top">
+                    <th></th>
+                    <th class="w3-center"></th>
+                    <th class="w3-center"></th>
+                    <th class="w3-center"></th>
+                    <th class="w3-center"></th>
+                    <th class="w3-center"></th>
+                    <th class="w3-center"></th>
+                    <th class="w3-center">~34.3 hr</th>
                 </tr>
             </table>
-            <br><br>
+            <br>
+            
+            <h3>Time spent working over the 6 weeks</h3>
+            <iframe width="800px" height="600px" scrolling="no" style="display: block; margin: auto; border: none;" src="https://editor.p5js.org/embed/By8-klYjQ"></iframe>
         </div>
         
         <hr>
@@ -135,7 +166,7 @@
     </div>
     
     <!-- Footer -->
-    <footer class="w3-bar" style="background: #040404;">
+    <footer class="w3-bar">
         <div class="w3-content" style="max-width: 1600px">
             <div class="w3-bar-item">&copy; briano. 2018.</div>
             <div class="w3-right">

@@ -17,7 +17,7 @@
 <body>
 
     <!-- Navbar -->
-    <div class="w3-bar w3-top w3-card" style="background: #040404">
+    <div class="w3-bar w3-top w3-card">
         <div class="w3-content" style="max-width: 1600px">
             <a class="w3-bar-item w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="#home" class="w3-bar-item w3-padding-large"><b>Internet Usage</b></a>
@@ -52,18 +52,37 @@
         <!-- Population Section -->
         <div id="population">
             <h1 class="w3-center">POPULATION &amp; NUMBER OF USER</h1>
+            
             <h3>Does population correlates to more internet users?</h3>
             <iframe width="800px" height="600px" scrolling="no" style="display: block; margin: auto; border: none;" src="https://editor.p5js.org/embed/H1IJ8GA9X"></iframe>
-        </div>
-        
-        <!-- Speed Section -->
-        <div id="speed">
-            <h1 class="w3-center">SPEED &amp; NUMBER OF USER</h1>
-            <h3>Does internet speed correlates to more internet users?</h3>
-            <iframe width="800px" height="600px" scrolling="no" style="display: block; margin: auto; border: none;" src="https://editor.p5js.org/embed/SyAZobVsQ"></iframe>
-            <div>
-                <a href="https://plot.ly/~briano1905/5/?share_key=yarfIA8AVD7p7l0EzNnwQX" target="_blank" title="Global average connection speeds 2015" style="display: block; text-align: center;"><img src="https://plot.ly/~briano1905/5.png?share_key=yarfIA8AVD7p7l0EzNnwQX" alt="Global average connection speeds 2015" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-                <script data-plotly="briano1905:5" sharekey-plotly="yarfIA8AVD7p7l0EzNnwQX" src="https://plot.ly/embed.js" async></script>
+            <br>
+            
+            <h3>Countries with most internet user per 100 capita</h3>
+            <div class="w3-row">
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>1<sup>st</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-fk" alt="Falkland Islands"/> Falkland Islands - 99.02&#37;
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>2<sup>nd</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-is" alt="Iceland"/> Iceland - 98.24&#37;
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>3<sup>rd</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-li" alt="Liechtenstein"/> Liechtenstein - 22.5 Mb/s
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>4<sup>th</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-bh" alt="Bahrain"/> Bahrain - 21.9 Mb/s
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>5<sup>th</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-bm" alt="Bermuda"/> Bermuda - 21.7 Mb/s
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>6<sup>th</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-ad" alt="Andorra"/> Andorra - 20.5 Mb/s
+                </div>
             </div>
             <br>
             
@@ -72,30 +91,56 @@
                 <script data-plotly="briano1905:3" sharekey-plotly="C0qqUzoyf028OR4BFVlwBd" src="https://plot.ly/embed.js" async></script>
             </div>
             <br>
+        </div>
+        
+        <!-- Speed Section -->
+        <div id="speed">
+            <h1 class="w3-center">SPEED &amp; NUMBER OF USER</h1>
             
-            <div>
-                <a href="https://plot.ly/~briano1905/7/?share_key=uAvNNIeMXOC6JpnrporE9s" target="_blank" title="Internet users per 100 inhabitants 2016" style="display: block; text-align: center;"><img src="https://plot.ly/~briano1905/7.png?share_key=uAvNNIeMXOC6JpnrporE9s" alt="Internet users per 100 inhabitants 2016" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-                <script data-plotly="briano1905:7" sharekey-plotly="uAvNNIeMXOC6JpnrporE9s" src="https://plot.ly/embed.js" async></script>
+            <h3>Does internet speed correlates to more internet users?</h3>
+            <iframe width="800px" height="600px" scrolling="no" style="display: block; margin: auto; border: none;" src="https://editor.p5js.org/embed/SyAZobVsQ"></iframe>
+            <br>
+            
+            <h3>Countries with the fastest connection speed</h3>
+            <div class="w3-row">
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>1<sup>st</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-kr" alt="South Korea"/> South Korea - 28.6 Mb/s
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>2<sup>nd</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-no" alt="Norway"/> Norway - 23.5 Mb/s
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>3<sup>rd</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-se" alt="Sweden"/> Sweden - 22.5 Mb/s
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>4<sup>th</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-hk" alt="Hong Kong"/> Hong Kong - 21.9 Mb/s
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>5<sup>th</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-ch" alt="Switzerland"/> Switzerland - 21.7 Mb/s
+                </div>
+                <div class="w3-col m6 l4 w3-padding">
+                    <h5>6<sup>th</sup></h5>
+                    <img src="flags/blank.gif" class="flag flag-fi" alt="Finland"/> Finland - 20.5 Mb/s
+                </div>
             </div>
             <br>
             
-            <h3>Which country has the fastest internet?</h3>
-            <p>South Korea <img src="flags/blank.gif" class="flag flag-kr" alt="South Korea"/> with an average connection speed of 28.6 Mb/s</p>
+                <a href="https://plot.ly/~briano1905/7/?share_key=uAvNNIeMXOC6JpnrporE9s" target="_blank" title="Internet users per 100 inhabitants 2016" style="display: block; text-align: center;"><img src="https://plot.ly/~briano1905/7.png?share_key=uAvNNIeMXOC6JpnrporE9s" alt="Internet users per 100 inhabitants 2016" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                <script data-plotly="briano1905:7" sharekey-plotly="uAvNNIeMXOC6JpnrporE9s" src="https://plot.ly/embed.js" async></script>
             <br>
             
-            <h3>Which country has most internet user per 100 residents?</h3>
-            <p>Falkland Island <img src="flags/blank.gif" class="flag flag-fk" alt="Falkland Island"/>, 99.02% of the population has access to the internet</p>
-            <br>
-            
-            <h3>Australia <img src="flags/blank.gif" class="flag flag-au" alt="Australia"/></h3>
-            <p>Average connection speed: 11.1 Mb/s [rank 39]<br>Internet users: 88.24% [rank 23]</p>
-            <br><br>
         </div>
-    
+        
     </div>
+
     
     <!-- Footer -->
-    <footer class="w3-bar" style="background: #040404;">
+    <footer class="w3-bar">
         <div class="w3-content" style="max-width: 1600px">
             <div class="w3-bar-item">&copy; briano. 2018.</div>
             <div class="w3-right">

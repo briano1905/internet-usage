@@ -1,8 +1,8 @@
 body {
-    background: linear-gradient(to right, #101010, #4d4d4d, #101010);
+    background: linear-gradient(to right, #273445, #95a3ab, #273445);
 }
 
-html, body, h1, h2, h3, h4, h5, h6, a {
+html, body, h1, h2, h3, h4, h5, h6, a{
     font-family:'Conv_iosevka-regular',sans-Serif;
     color: #fafafa;
     text-decoration: none;
@@ -10,21 +10,35 @@ html, body, h1, h2, h3, h4, h5, h6, a {
 
 hr {
     border: none;
-    height: 2px;
+    height: 1px;
     color: #fafafa;
     background-color: #fafafa;
+}
+
+a {
+    color: #3689e6;
 }
 
 a:hover {
     color: #a56de2
 }
 
+.w3-bar-item {
+    color: #fafafa;
+}
+
+.w3-content {
+    background-color: #0e141f;
+}
+
+.w3-bar {
+    background-color: #667885;
+}
+
+.w3-col {
+    background-image: linear-gradient(to bottom right, #273445, #485a6c);
+}
+
 #work {
     background-image: linear-gradient(to bottom right, #cd9ef7, #a56de2);
 }
-
-#content {
-    background: #101010;
-}
-
-header {}
