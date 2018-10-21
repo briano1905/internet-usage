@@ -39,6 +39,18 @@ a:hover {
     background-image: linear-gradient(to bottom right, #273445, #485a6c);
 }
 
-#work {
-    background-image: linear-gradient(to bottom right, #cd9ef7, #a56de2);
+#work1 {
+    background-image: linear-gradient(to bottom right, #cd9ef7, #e4c6fa);
+}
+
+#work2 {
+    background-image: linear-gradient(to bottom right, #a56de2, #cd9ef7);
+}
+
+#work3 {
+    background-image: linear-gradient(to bottom right, #7239b3, #a56de2);
+}
+
+#work4 {
+    background-image: linear-gradient(to bottom right, #452981, #7239b3);
 }
