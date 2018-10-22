@@ -39,6 +39,11 @@ a:hover {
     background-image: linear-gradient(to bottom right, #273445, #485a6c);
 }
 
+#navDemo {
+  margin-top:46px;
+  background-color: #273445;
+}
+
 #work1 {
     background-image: linear-gradient(to bottom right, #cd9ef7, #e4c6fa);
 }
@@ -53,4 +58,31 @@ a:hover {
 
 #work4 {
     background-image: linear-gradient(to bottom right, #452981, #7239b3);
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  border: none;
+  width: 800px;
+  height: 600px;
+}
+
+.youtube {
+  height: 450px;
+}
+
+.resp {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
